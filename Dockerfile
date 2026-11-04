@@ -4,4 +4,4 @@ FROM alpine:3.20
 WORKDIR /app
 COPY README.md .
 
- ["echo", "veritas docker-build-cloud-demo"]
+CMD ["echo", "veritas docker-build-cloud-demo"]
