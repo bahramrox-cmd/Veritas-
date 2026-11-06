@@ -1,0 +1,20 @@
+version: 5
+workspace:
+  vaults:
+    - fsPath: vault
+      name: veritas
+  journal:
+    dailyDomain: daily
+    name: journal
+    dateFormat: yyyy.MM.dd
+    addBehavior: childOfDomain
+  scratch:
+    name: scratch
+    dateFormat: yyyy.MM.dd.HHmmss
+    addBehavior: asOwnDomain
+  enableAutoCreateOnDefinition: false
+  enablePrettyRefs: true
+preview:
+  enableFMTitle: true
+  enableNoteTitleForLink: true
+  automaticallyShowPreview: false

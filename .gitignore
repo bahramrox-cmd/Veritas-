@@ -1,0 +1,7 @@
+.dendron.*
+node_modules/
+build/
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
