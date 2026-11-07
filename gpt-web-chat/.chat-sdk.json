@@ -1,0 +1,7 @@
+{
+  "files": [
+    "src/app/api/chat/route.ts",
+    "src/lib/auth-stub.ts"
+  ],
+  "version": 1
+}
