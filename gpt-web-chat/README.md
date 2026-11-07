@@ -20,6 +20,8 @@ npm run dev
 
 4. Open [http://localhost:3000](http://localhost:3000). Messages go to `/api/chat`.
 
+If Turbopack waits for the filesystem to settle and mentions `desktop.ini` under `node_modules`, OneDrive is touching those folders. Exclude `gpt-web-chat/node_modules` and `gpt-web-chat/.next` from OneDrive sync, or run the app from a path outside OneDrive. Polling (`watchOptions.pollIntervalMs`) is a last resort.
+
 The auth stub in `src/lib/auth-stub.ts` currently returns a local user. Replace it before exposing this beyond your machine.
 
 ## Endpoints
